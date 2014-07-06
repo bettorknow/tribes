@@ -14,7 +14,7 @@ namespace Tribes.Database.Dal
             List<Expression<Func<TEntity, object>>> includeProperties = null, int? page = null, int? pageSize = null);
         TEntity GetById(Guid id);
         void Insert(TEntity entity);
-        void Delete(Guid id); 
+        void Delete(Guid id)
         void Delete(TEntity entityToDelete);
         void Update(TEntity entityToUpdate);
     }
